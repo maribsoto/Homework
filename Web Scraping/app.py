@@ -6,7 +6,7 @@ from flask_pymongo import PyMongo
 from splinter import Browser
 from bs4 import BeautifulSoup
 from selenium import webdriver
-from scrape_mars import scrape_all
+from scrape import scrape_all
 
 #################################################
 # Database and Flask Setup
@@ -21,7 +21,7 @@ app = Flask(__name__)
 # Create route that renders index.html template
 @app.route('/')
 def index():
-    return render_template('index.html')
+    return render_template('index_old.html')
 
 
 @app.route('/scrape')
