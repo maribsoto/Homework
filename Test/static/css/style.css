@@ -1,0 +1,346 @@
+/* Importing fonts*/
+
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+@import url('https://fonts.googleapis.com/css?family=Audiowide');
+@import url('https://fonts.googleapis.com/css?family=Michroma');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+@import url('https://fonts.googleapis.com/css?family=Exo');
+
+* {
+  box-sizing: border-box;
+  font-family: Ubuntu;
+}
+
+html,
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  background-color: rgb(110, 148, 135);
+}
+
+/* The wrapper contains all of the page's content besides the footer, which is pushed to the bottom of the page */
+.wrapper {
+  position: relative;
+  min-height: 100%;
+  padding-bottom: 130px;
+  overflow: auto;
+}
+
+/* The footer is positioned at the bottom of the page */
+.footer {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  min-height: 100px;
+  background: #4e5d6c;
+}
+
+/* The code styles the text at the bottom of the footer */
+.footer > .bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  padding: 5px;
+  background: #1b3146;
+}
+
+.navbar {
+  padding: 10px;
+  margin: 10px;
+  font-style: normal;
+  font-weight: 700;
+  max-height: 100px;
+}
+
+.navbar-brand {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4dee7;
+  font-family: Michroma;
+}
+
+.navbar-nav {
+  font-size: 22px;
+  font-weight: bold;
+  color: #d4dee7;
+  justify-content: right;
+  font-family: Michroma;
+}
+
+.nav-link {
+  font-family: Michroma;
+  font-size: 14px;
+}
+
+.dropdown-item {
+  font-size: 21px;
+}
+/* This CSS styles the ufo icon in the navbar */
+.ufo {
+  position: absolute;
+  top: 3px;
+  bottom: 5px;
+  left: 200px;
+  width: 50px;
+  color: white;
+}
+
+.navbar-text {
+  margin-left: 10px;
+  font-weight: 700;
+  font-size: 18px;
+  text-align: right;
+  font-family: Michroma;
+}
+/* Adding styles to the aside, filters and table */
+.ufo-form {
+  margin-top: 80px;
+}
+
+.filters .panel-body {
+  padding: 0;
+}
+
+.panel-heading {
+  font-family: Michroma;
+  font-weight: 900;
+}
+
+.panel-footer {
+  font-family: Audiowide;
+  font-weight: 500;
+  background-color: #1b3146;
+  font-size: 22px;
+}
+
+label {
+  font-size: 14px;
+  font-family: Michroma;
+  
+}
+
+.filters {
+  margin-top: 10px;
+}
+
+select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  color: #8e979f;
+  outline: none;
+}
+
+#table-area th {
+  text-align: left;
+  font-size: 13px;
+  font-family: Exo;
+  font-weight: 1100;
+}
+
+#table-area th:first-child,
+#table-area th:nth-child(2),
+#table-area th:nth-child(6) {
+  min-width: 70px;
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+.margin-top-50 {
+  margin-top: 50px;
+}
+
+/* The styles for the parallax */
+.invasion {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/moon-landing.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.invasion h1 {
+  margin-top: 200px;
+  font-size: 0.1rem;
+  color: whitesmoke;
+  animation: title 1.5s forwards linear;
+  font-family: Audiowide, sans-serif;
+}
+
+.invasion p {
+  font-size: 3rem;
+  opacity: 15;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  color: rgb(245, 250, 250);
+  text-shadow: 1px 1px 1px #f1f2f8, 1px 3px 3px #aba8a8;
+  font-family: Michroma, sans-serif;
+
+}
+
+.btn {
+  font-family: Michroma;
+  font-weight: 600;
+  font-size: 14px;
+  background-color: #606972;
+}
+/* input placeholder color changes */
+.form-control::-webkit-input-placeholder {
+  /* Chrome/Opera/Safari */
+  color: #8e979f;
+}
+
+.form-control::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #8e979f;
+}
+
+.form-control:-ms-input-placeholder {
+  /* IE 10+ */
+  color: #8e979f;
+}
+
+.form-control:-moz-placeholder {
+  /* Firefox 18- */
+  color: #8e979f;
+}
+
+.invasion_1 {
+  position: relative;
+  height: 300px;
+  padding: 20px;
+  margin: 0;
+  background: black;
+  background-image: url("../images/5b6494cd5c5e52e3568b4817.jpg");
+  background-attachment: fixed;
+  background-position: bottom center;
+  background-size: cover;
+}
+
+.invasion_1 h1 {
+  margin-top: 70px;
+  font-size: 2rem;
+  color: whitesmoke;
+  animation: title 1.5s forwards linear;
+  font-family: Audiowide, sans-serif;
+}
+
+.invasion_1 p {
+  font-size: 2.5rem;
+  opacity: 15;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  color: whitesmoke;
+  text-shadow: 1px 1px 1px #555558, 1px 3px 3px #aba8a8;
+  font-family: Michroma, sans-serif;
+
+}
+
+.panel-heading {
+  font-size: 19px;
+  font-weight: 500;
+
+}
+/* media queries which will only be activated at specific screen sizes */
+@media (max-width: 800px) {
+  #table-area td {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 500px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: right;
+  }
+
+  .nav-link {
+    text-align: right;
+  }
+  #table-area thead {
+    display: none;
+  }
+
+  #table-area tr td:first-child {
+    font-size: 1.8em;
+    font-weight: bold;
+    background: #1b3146;
+  }
+
+  #table-area tr td:last-child {
+    margin-bottom: 20px;
+  }
+
+  #table-area tr td:last-child::after {
+    display: block;
+    width: 100%;
+    height: 1px;
+    margin-top: 20px;
+    content: " ";
+    background: aliceblue;
+  }
+
+  #table-area td {
+    font-size: 1em;
+    font-family: Exo;
+  }
+
+  #table-area tbody td {
+    display: block;
+    text-align: left;
+  }
+
+  #table-area tbody td::before {
+    display: block;
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    content: attr(data-th);
+  }
+
+  .invasion h1 {
+    animation: smaller-title 1.2s forwards linear;
+  }
+}
+
+/* keyframe animations which will be used to animate the title */
+@keyframes title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 7.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes smaller-title {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    font-size: 5.5rem;
+    opacity: 1;
+  }
+}
+
+@keyframes subtitle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
